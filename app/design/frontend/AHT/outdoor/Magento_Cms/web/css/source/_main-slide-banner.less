@@ -1,3 +1,10 @@
+//target all screen
+& when (@media-common = true) {
+    img {
+        height: auto !important;
+    }
+}
+
 //target >=768px
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .main-slide-banner__item {
@@ -10,6 +17,9 @@
             transform: translate(-50%, -50%);   
             width: fit-content;
             text-align: center;
+            img {
+                height: auto;
+            }
             h1 {
                 font-size: 140px;
                 color: white; 

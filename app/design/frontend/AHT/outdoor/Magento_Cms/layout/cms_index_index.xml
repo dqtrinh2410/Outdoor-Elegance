@@ -15,7 +15,8 @@
         <referenceContainer name="main">
             <block class="Magento\Framework\View\Element\Template" name="main.banner.two.items" before="-" template="Magento_Cms::main-banner-two-items.phtml" />
             <block class="Magento\Framework\View\Element\Template" name="main.reason.to.buy" after="main.banner.two.items" template="Magento_Cms::main-reason-to-buy.phtml" />
-       
+            <block class="Magento\Framework\View\Element\Template" name="main.banner.three.items" after="main.reason.to.buy" template="Magento_Cms::main-banner-three-items.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="main.banner.image.video" after="main.banner.three.items" template="Magento_Cms::main-banner-image-video.phtml" />
         </referenceContainer>
     </body>
 </page>
