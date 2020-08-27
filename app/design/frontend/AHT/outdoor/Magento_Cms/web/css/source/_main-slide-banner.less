@@ -1,0 +1,39 @@
+//target >=768px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .main-slide-banner__item {
+        position: relative;
+
+        .slide-banner-description {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);   
+            width: fit-content;
+            text-align: center;
+            h1 {
+                font-size: 140px;
+                color: white; 
+                font-family: 'Caveat', cursive;
+                font-weight: bold;
+            }
+            p {
+                font-size: 32px;
+                color: white;
+                font-family: 'Lora', serif;
+                font-weight: 400;
+            }
+
+            .btn-slide-banner {
+                margin-top: 20px;
+                font-size: 15px;
+                color: white;
+                font-family: @font-family-name__base__roboto;
+                font-weight: bold;
+                background-color: @color-black;
+                border: 2px solid white;
+                .mixin-next-arrows(20px, @icon-next, none);
+                padding-right: 25px;
+            }
+        }
+    }
+}

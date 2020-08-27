@@ -1,0 +1,51 @@
+//desktop
+p, ul{
+    margin: 0;
+}
+
+ul>li {
+    margin: 0;
+}
+
+& when (@media-common = true) {
+    .page-header {    
+        .panel.wrapper {
+            background-color:@color-black !important;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: @font-family__base__roboto;
+
+            .left-top-header, 
+            .my-panel-header a{
+                font-size: 13px;
+                font-weight: 400;
+                color: white;
+            }
+
+            .center-top-header {
+                display: flex;
+                font-size: 14px;
+                font-weight: 700; 
+
+                 ul {
+                     display: flex;
+                 }
+            }
+
+            ul li {
+                margin-left: 13px;
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m) {
+    .page-header .header.panel{
+        margin: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+  }

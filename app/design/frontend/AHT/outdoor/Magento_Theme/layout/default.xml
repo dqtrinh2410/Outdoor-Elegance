@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="register-link" remove="true"/>
+        <!-- <referenceBlock name="authorization-link" remove="true"/> -->
+        <referenceBlock name="wish-list-link" remove="true"/>
+        <referenceBlock name="my-account-link" remove="true"/>
+        <referenceBlock name="header" remove="true" />
+        <referenceBlock name="advanced-search-link" remove="true" />
+        
+        <referenceContainer name="header.panel.wrapper">
+            <container name="left.top.header" htmlTag="div" before="-" htmlClass="left-top-header">
+                <block class="Magento\Cms\Block\Block" name="left-top-header">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">left-top-header</argument>
+                    </arguments>
+                </block>
+            </container>
+            <container name="center.top.header" htmlTag="div" before="header.panel" htmlClass="center-top-header">
+                <block class="Magento\Cms\Block\Block" name="center-top-header">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">center-top-header</argument>
+                    </arguments>
+                </block>
+            </container>
+            <referenceContainer name="header.panel" htmlTag="div" htmlClass="panel header my-panel-header">
+            </referenceContainer>
+         </referenceContainer>        
+    </body>
+</page>

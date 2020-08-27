@@ -1,0 +1,10 @@
+// next arrows
+.mixin-next-arrows(@font-size, @content, @margin-top) {
+    &::after {
+        content: @content;
+        font-family: 'icons-blank-theme';
+        font-size: @font-size;
+        position: absolute;
+        margin-top: @margin-top;
+    }
+}

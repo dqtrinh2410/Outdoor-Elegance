@@ -1,0 +1,20 @@
+//target all screen
+& when (@media-common = true) {
+    .reason-to-buy {
+        margin-top: 10px;
+        .reason-to-buy__item {
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: white;
+            font-weight: 500;
+            font-family: @font-family-name__base__roboto;
+            text-align: center;
+            background-color: @color-black;
+            text-transform: uppercase;
+            padding: 11px 0px;
+            p {
+                .mixin-next-arrows(20px, '\e608', -6px);
+            }
+        }
+    }
+}
